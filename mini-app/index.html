@@ -16,5 +16,10 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
+    <script>
+  function open_window() {
+    window.postMessage({ type: 'connect-wallet-btn' }, '*');
+  }
+</script>
   </body>
 </html>

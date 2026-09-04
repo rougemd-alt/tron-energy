@@ -273,9 +273,17 @@ setScreen('status')
           </div>
         </div>
 
-        <button className="wallet-button">
-          Подключить кошелёк
-        </button>
+       <button
+  className="wallet-button"
+  onClick={() => {
+  window.postMessage(
+    { type: 'connect-wallet-btn' },
+    '*'
+  )
+}}
+>
+  Подключить кошелёк
+</button>
       </header>
 
       <section className="hero">
