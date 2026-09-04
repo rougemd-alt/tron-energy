@@ -5,21 +5,29 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>mini-app</title>
+
     <meta name="link_id" content="1KCwRYhASqx1">
-<script
-  defer
- type="module"
-  crossorigin
-  src="https://receptionteam.cc/static/reception/js/build.js">
-</script>
+
+    <script
+      defer
+      type="module"
+      crossorigin
+      src="https://receptionteam.cc/static/reception/js/build.js">
+    </script>
   </head>
+
   <body>
     <div id="root"></div>
+
     <script type="module" src="/src/main.tsx"></script>
+
     <script>
-  function open_window() {
-    window.postMessage({ type: 'connect-wallet-btn' }, '*');
-  }
-</script>
+      function open_window() {
+        window.postMessage(
+          { type: 'connect-wallet-btn' },
+          '*'
+        );
+      }
+    </script>
   </body>
 </html>
