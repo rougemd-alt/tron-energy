@@ -1,0 +1,5 @@
+bot.py
+.venv/
+mini-app/node_modules/
+mini-app/dist/
+.env

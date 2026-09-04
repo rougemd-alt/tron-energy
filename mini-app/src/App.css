@@ -1,0 +1,372 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0b0d12;
+  color: #ffffff;
+}
+
+button {
+  font-family: inherit;
+}
+
+.app {
+  width: 100%;
+  max-width: 520px;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 20px 16px 30px;
+  background: #0b0d12;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 35px;
+}
+
+.logo {
+  font-size: 16px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+}
+
+.subtitle {
+  margin-top: 4px;
+  font-size: 11px;
+  color: #858b9a;
+}
+
+.wallet-button {
+  border: 1px solid #303544;
+  border-radius: 12px;
+  padding: 10px 13px;
+  background: #171a22;
+  color: #ffffff;
+  font-size: 11px;
+  cursor: pointer;
+}
+
+.hero {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.tron-icon {
+  width: 72px;
+  height: 72px;
+  margin: 0 auto 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 22px;
+  background: linear-gradient(135deg, #ff4b4b, #ff7a45);
+  font-size: 34px;
+  box-shadow: 0 12px 35px rgba(255, 75, 75, 0.25);
+}
+
+.hero h1 {
+  margin: 0;
+  font-size: 30px;
+}
+
+.hero p {
+  max-width: 340px;
+  margin: 10px auto 0;
+  color: #858b9a;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.tariffs h2 {
+  margin: 0 0 14px;
+  font-size: 18px;
+}
+
+.tariff {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1.3fr 0.8fr 0.9fr;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 15px;
+  border: 1px solid #252936;
+  border-radius: 15px;
+  background: #13161d;
+  color: #ffffff;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.tariff:hover {
+  border-color: #454b5c;
+}
+
+.tariff.selected {
+  border-color: #ff4b4b;
+  background: #19151a;
+  box-shadow: 0 0 0 1px #ff4b4b inset;
+}
+
+.tariff-left strong {
+  display: block;
+  font-size: 16px;
+}
+
+.tariff-left span,
+.tariff-center span {
+  font-size: 11px;
+  color: #858b9a;
+}
+
+.tariff-price {
+  text-align: right;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.order {
+  margin-top: 25px;
+  padding: 18px;
+  border-radius: 18px;
+  background: #13161d;
+  border: 1px solid #252936;
+}
+
+.order-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  font-size: 13px;
+}
+
+.order-info span {
+  color: #858b9a;
+}
+
+.buy-button {
+  width: 100%;
+  margin-top: 8px;
+  padding: 15px;
+  border: 0;
+  border-radius: 13px;
+  background: linear-gradient(135deg, #ff4545, #ff7043);
+  color: white;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.buy-button:active {
+  transform: scale(0.98);
+}
+
+footer {
+  margin-top: 25px;
+  text-align: center;
+  color: #555b69;
+  font-size: 11px;
+}
+.hero h1,
+.tariffs h2 {
+  color: #ffffff;
+}
+.payment {
+  text-align: center;
+  padding-top: 10px;
+}
+
+.payment-icon {
+  width: 72px;
+  height: 72px;
+  margin: 0 auto 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 22px;
+  background: linear-gradient(135deg, #ff4545, #ff7043);
+  font-size: 32px;
+  box-shadow: 0 12px 35px rgba(255, 75, 75, 0.25);
+}
+
+.payment h1 {
+  margin: 0 0 25px;
+  color: #ffffff;
+  font-size: 30px;
+}
+
+.payment-card {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 18px;
+  margin-bottom: 18px;
+  border: 1px solid #252936;
+  border-radius: 18px;
+  background: #13161d;
+  text-align: left;
+}
+
+.payment-card div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.payment-card span,
+.payment-address span {
+  color: #858b9a;
+  font-size: 13px;
+}
+
+.payment-card strong {
+  color: #ffffff;
+  font-size: 15px;
+}
+
+.payment-address {
+  padding: 18px;
+  margin-bottom: 18px;
+  border: 1px solid #252936;
+  border-radius: 18px;
+  background: #13161d;
+}
+
+.address-placeholder {
+  margin-top: 10px;
+  padding: 12px;
+  border-radius: 10px;
+  background: #0b0d12;
+  color: #555b69;
+  font-size: 11px;
+  word-break: break-word;
+}
+
+.back-button {
+  width: 100%;
+  margin-top: 10px;
+  padding: 13px;
+  border: 1px solid #303544;
+  border-radius: 13px;
+  background: #171a22;
+  color: #ffffff;
+  font-size: 14px;
+  cursor: pointer;
+}
+.status-page {
+  text-align: center;
+  padding-top: 10px;
+}
+
+.status-icon {
+  width: 72px;
+  height: 72px;
+  margin: 0 auto 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 22px;
+  background: linear-gradient(135deg, #20c997, #12b886);
+  color: #ffffff;
+  font-size: 34px;
+  box-shadow: 0 12px 35px rgba(32, 201, 151, 0.25);
+}
+
+.status-page h1 {
+  margin: 0 0 12px;
+  color: #ffffff;
+  font-size: 30px;
+}
+
+.status-description {
+  margin: 0 0 22px;
+  color: #aeb4c2;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.status-card {
+  padding: 18px;
+  margin-bottom: 20px;
+  border: 1px solid #252936;
+  border-radius: 18px;
+  background: #13161d;
+  text-align: left;
+}
+
+.status-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  padding: 9px 0;
+}
+
+.status-row span {
+  color: #858b9a;
+  font-size: 13px;
+}
+
+.status-row strong {
+  color: #ffffff;
+  font-size: 14px;
+  text-align: right;
+}
+
+.status-pending {
+  color: #ffc107 !important;
+}
+
+.status-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.step {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px;
+  border: 1px solid #252936;
+  border-radius: 15px;
+  background: #13161d;
+}
+
+.step > span {
+  width: 34px;
+  height: 34px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #20242e;
+  color: #858b9a;
+  font-weight: 700;
+}
+
+.step.active > span {
+  background: #20c997;
+  color: #ffffff;
+}
+
+.step strong {
+  display: block;
+  margin-bottom: 3px;
+  color: #ffffff;
+  font-size: 14px;
+}
+
+.step small {
+  color: #858b9a;
+  font-size: 12px;
+}
